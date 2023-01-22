@@ -1,0 +1,113 @@
+.navigation{
+    margin-bottom: 30px;
+}
+
+.navigation__container{
+    padding: 0;
+    min-width: 100vw;
+}
+
+.navigation_list{
+    display: flex;
+    padding: 0 calc((100vw / 2) - (var(--container)) / 2);
+    overflow-x: auto;
+    overflow-y: hidden;
+    row-gap: 8px;
+}
+
+.navigation__btn{
+    border-radius: 50px;
+    padding: 7px 13px 7px 37px;
+    font-size: 12px;
+    line-height: 16px;
+    white-space: nowrap;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 8px center;
+    cursor: pointer;
+    position: relative;
+}
+
+.navigation__btn:hover,
+.navigation__btn:focus-visible{
+    outline: 1px solid #F86310;
+    outline-offset: -1px;
+}
+
+@supports not selector(:focus-visible){
+    .navigation__btn:focus{
+        outline: 1px solid #F86310;
+        outline-offset: -1px;
+    }
+}
+
+.navigation__btn_active{
+    pointer-events: none;
+    background-color: #FFAB08;
+}
+.navigation__btn_active:focus{
+    outline: none;
+}
+
+.navigation__btn_burger{
+    background-image: url("../img/burger.png");
+}
+
+.navigation__btn_snack{
+    background-image: url("../img/snack.png");
+}
+.navigation__btn_hot-dog{
+    background-image: url("../img/hot-dog.png");
+}
+.navigation__btn_combo{
+    background-image: url("../img/combo.png");
+}
+.navigation__btn_shawarma{
+    background-image: url("../img/shawarma.png");
+}
+.navigation__btn_pizza{
+    background-image: url("../img/pizza.png");
+}
+.navigation__btn_wok{
+    background-image: url("../img/wok.png");
+}
+.navigation__btn_dessert{
+    background-image: url("../img/dessert.png");
+}
+.navigation__btn_sauce{
+    background-image: url("../img/sauce.png");
+}
+
+@media (min-width: 480px) {
+    .navigation{
+        --container: 80%;
+    }
+}
+
+@media (min-width: 768px){
+    .navigation__list {
+        --container: 640px;
+    }
+}
+@media (min-width: 1024px){
+    .navigation{
+        margin-bottom: 50px;
+        --container: 960px;
+    }
+    .navigation__list{
+        column-gap: 24px;
+    }
+    .navigation__btn{
+        padding: 9px 17px 9px 46px;
+        font-size: 16px;
+        line-height: 24px;
+        background-position: 14px center;
+    }
+}
+
+@media (min-width: 1360px){
+    .navigation{
+        --container: 1290px;
+    }
+}

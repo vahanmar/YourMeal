@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>YourMeal</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <svg class="header__logo" viewBox="0 0 199 44" role="img" aria-label="">
+                    <use href="img/sprite.svg#logo "/>
+                </svg>
+                <div class="header__title-container">
+                    <h1 class="header__title">
+                        <span class="header__title-text">Только самые</span>
+                        <span class="header__title-text header__title-text_red">сочные бургеры!</span>
+                    </h1>
+                    <p class="header__appeal">Бесплатная доставка от 599₽</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <nav class="navigation">
+                <div class="container navigation__container">
+                    <ul class="navigation_list">
+                        <li class="navigation__item">
+                            <div class="navigation__btn navigation__btn_burger navigation__btn_active">Бургеры</div>
+                        </li>
+                        <li class="navigation__item">
+                            <div class="navigation__btn navigation__btn_snack">Закуски</div>
+                        </li>
+                        <li class="navigation__item">
+                            <div class="navigation__btn navigation__btn_hot-dog">Хот-доги</div>
+                        </li>
+                        <li class="navigation__item">
+                            <div class="navigation__btn navigation__btn_combo"><a href="#">Комбо</a></div>
+                        </li>
+                        <li class="navigation__item">
+                            <div class="navigation__btn navigation__btn_shawarma">Шаурма</div>
+                        </li>
+                        <li class="navigation__item">
+                            <div class="navigation__btn navigation__btn_pizza">Пицца</div>
+                        </li>
+                        <li class="navigation__item">
+                            <div class="navigation__btn navigation__btn_wok">Вок</div>
+                        </li>
+                        <li class="navigation__item">
+                            <div class="navigation__btn navigation__btn_dessert">Десерты</div>
+                        </li>
+                        <li class="navigation__item">
+                            <div class="navigation__btn navigation__btn_sauce">Соусы</div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="catalog">
+                <div class="container">
+                    <div class="catalog__order order order__open">
+                        <section class="order__wrapper">
+                            <div class="order__wrap-titel" tabindex="0" role="button">
+                                <h2 class="order__titel">Корзина</h2>
+                                <span class="order__count">4</span>
+                            </div>
+                            <div class="order__wrap_list">
+                                <ul class="order__list">
+                                        <li class="order__item">
+                                            
+                                <div class="order__total">
+                                    <p>Итого</p>
+                                    <p>
+                                        <span class="order__total-amount">1279</span>
+                                        <span class="currency">Р</span>
+                                    </p>
+                                </div>  
+                                <button class="order__sumbit">Оформить заказ</button>
+                                <div class="order__wrap-apeal">
+                                    <p class="order__apeal">Бесплатная доставка</p> 
+                                    <button class="order__close">Свернуть</button>
+                                </div>                      
+                            </div>
+                        </section>
+                    </div>
+                    <div class="catalog__wrapper">
+                        <h2 class="catalog__titel">Бургеры</h2>
+                        <div class="catalog__wrap_list">
+                            <ul class="catalog__list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
